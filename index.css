@@ -21,6 +21,11 @@
   scroll-behavior: smooth;
 }
 
+body, html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 section {
   border-bottom: 3px solid var(--light-grey);
   scroll-margin-top: 100px;
@@ -33,12 +38,13 @@ section:last-child {
 /* Header */
 .navbar {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   padding: 0 40px;
   background-color: var(--white);
   align-items: center;
   border-bottom: 3px solid var(--light-grey);
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 
@@ -76,7 +82,7 @@ section:last-child {
 
 main {
   max-width: 70%;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 /* Title Section */

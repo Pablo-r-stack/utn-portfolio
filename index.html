@@ -31,8 +31,9 @@
         </button>
         <ul id="nav-menu">
           <li><a href="#perfil">Acerca de</a></li>
-          <li><a href="#experience">Experiencia</a></li>
           <li><a href="#educacion">Educación</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#technologies">Tecnologías</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
@@ -201,7 +202,7 @@
       </section>
 
       <!-- Technologies Section -->
-      <section class="profile-technologies">
+      <section id="technologies" class="profile-technologies">
         <h3>Tecnologías</h3>
         <p>Lenguajes y Herramientas utilizadas</p>
 
@@ -256,22 +257,11 @@
     <footer>
       <img src="./assets/utn-logo.png" alt="utn logo" />
       <div>
-        <p>Desarrollado por <strong>Grupo Ctrl C + Ctrl V</strong> - 2025</p>
+        <p>Desarrollado por <strong>Pablo Velasco</strong> - 2025</p>
         <p>Tecnicatura Universitaria en Programación - <span>UTN FRSR</span></p>
       </div>
     </footer>
     <!-- Hamburger menu script -->
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navMenu = document.getElementById("nav-menu");
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-        hamburger.setAttribute(
-          "aria-expanded",
-          hamburger.classList.contains("active")
-        );
-      });
-    </script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

@@ -439,7 +439,7 @@ footer {
 }
 
 /* ===================== HAMBURGER MENU FIXED RESPONSIVE ===================== */
-@media (max-width: 900px) {
+@media (max-width: 1023px) {
   .navbar {
     flex-direction: row;
     justify-content: space-between;
@@ -517,29 +517,6 @@ footer {
   }
 }
 
-@media (min-width: 901px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-    gap: 0;
-  }
-  .links-container ul {
-    position: static;
-    flex-direction: row;
-    transform: none !important;
-    box-shadow: none;
-    padding: 0;
-    background: none;
-    display: flex;
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .hamburger {
-    display: none;
-  }
-}
 
 /* ===================== RESPONSIVE DESIGN ===================== */
 /*
